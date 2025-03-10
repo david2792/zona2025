@@ -1,0 +1,78 @@
+/* src/assets/styles/Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ca1aaf;
+    background-image: url('../fondo.jpg');
+}
+
+#titulo{
+    margin-top: -30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(45, 174, 54); /* El color del texto */
+    text-shadow: 2px 2px 0px rgb(10, 10, 10), /* Sombra a la derecha y abajo */
+                 -2px -2px 0px black, /* Sombra a la izquierda y arriba */
+                 -2px 2px 0px black, /* Sombra a la izquierda y abajo */
+                 2px -2px 0px black; /* Sombra a la derecha y arriba */
+}
+.login-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    color: rgb(5, 152, 59);
+    opacity: 90%;
+    
+    position: relative; /* Hacer que el Card sea un contenedor de referencia para la imagen */
+    z-index: 1;
+}
+
+.login-logo {
+    position: absolute;
+    top: 150px; /* Ajusta este valor según el tamaño de la imagen */
+    left: 50%;
+    transform: translateX(-50%); /* Centra horizontalmente la imagen */
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto;
+    border-radius: 20px;
+    z-index: 2; /* Asegúrate de que la imagen esté por encima del Card */
+}
+
+.field {
+    margin-bottom: 1rem;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.field .p-inputtext,
+.field .p-password input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.p-password {
+    width: 100%;
+}
+
+/* Ajustes para pantallas pequeñas (dispositivos móviles) */
+@media (max-width: 600px) {
+    .login-logo {
+        top: 300px; /* Ajusta la posición del logo para pantallas más pequeñas */
+        width: 80px; /* Puedes reducir el tamaño del logo si es necesario */
+    }
+
+    .login-card {
+        padding: 1rem; /* Ajusta el padding del Card para pantallas pequeñas */
+    }
+
+    #titulo {
+        font-size: 24px; /* Reduce el tamaño del título si es necesario */
+    }
+}

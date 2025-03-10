@@ -1,0 +1,11 @@
+.dashboard-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4; /* Ajusta el color de fondo según tu preferencia */
+}
+
+.logout-container {
+    margin-left: auto;
+}

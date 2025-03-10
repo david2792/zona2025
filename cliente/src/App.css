@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.p-menubar {
+  margin-bottom: 20px;
+}
+
+.p-card {
+  margin: 20px;
+}
+
+.p-grid {
+  margin: 0;
+  padding: 0;
+}

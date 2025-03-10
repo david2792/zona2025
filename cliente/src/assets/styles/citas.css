@@ -1,0 +1,13 @@
+.card-container {
+   
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    min-height: 50vh;       /* Altura mínima para centrar verticalmente */
+  }
+  
+  .card {
+    max-width: 900px; /* Ancho máximo de la card */
+    width: 100%;      /* Ancho al 100% hasta el máximo */
+   
+  }

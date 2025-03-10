@@ -1,0 +1,43 @@
+
+  .OdontogramContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .Odontogram {
+    text-align: center;
+    padding: 5px;
+    height: 800px;
+    width: 100%;
+    padding-top: 50px;
+  }
+  
+  .Observations {
+    width: 30%;
+    padding: 10px;
+    padding-top: 50px;
+  }
+  
+  .Observations textarea {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
+  }
+  
+  .Observations button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .Observations button:hover {
+    background-color: #0056b3;
+  }
+  

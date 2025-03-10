@@ -1,0 +1,18 @@
+/* src/assets/styles/Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f4f4f4; /* Ajusta el color de fondo según tu preferencia */
+}
+
+.navbar-left {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar-right {
+    margin-left: auto;
+}

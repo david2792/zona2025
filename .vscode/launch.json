@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "InformeApplication",
+            "request": "launch",
+            "mainClass": "com.example.informe.InformeApplication",
+            "projectName": "informe"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-ServidorApplication<servidor>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.back.servidor.ServidorApplication",
+            "projectName": "servidor",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=56371 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=servidor"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-InformesApplication<informes>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.impresion.informes.InformesApplication",
+            "projectName": "informes",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
