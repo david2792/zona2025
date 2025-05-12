@@ -48,6 +48,19 @@ const CitaForm = ({toast}) => {
 
 
   useEffect(() => {
+    const idusuario = sessionStorage.getItem("idusuario");
+    const nombreUsuario = sessionStorage.getItem("nombreUsuario");
+  
+    if (!idusuario || !nombreUsuario) {
+      toast.current?.show({
+        severity: 'warn',
+        summary: 'Sesión no iniciada',
+        detail: 'Debe iniciar sesión para registrar una cita.'
+      });
+      return;
+    }
+  
+    setUsuarios(`${idusuario}-${nombreUsuario}`);
     // Cargar profesionales
     axiosInstance
       .get('profesional')
