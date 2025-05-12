@@ -1,9 +1,9 @@
 export default {
   database: {
-   //  host:'localhost',
+   // host:'localhost',
      user: 'manager',
      password: 'developer',
-    // host: "24.152.40.104",+
+    //ost: "24.152.40.104",+
     host: "147.182.235.218",
     // user: "root",
     // password: "<*claveS3cr3t4*>",

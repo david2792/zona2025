@@ -2,6 +2,8 @@ import axios from 'axios';
 
 //const API_URL = 'http://24.152.42.107:8091/api/';
 const API_URL = 'http://147.182.235.218:3000/api/';
+//const API_URL = 'http://localhost:3000/api/';
+
 const axiosInstance = axios.create({
     baseURL: API_URL,
 });
@@ -12,7 +14,8 @@ axiosInstance.interceptors.request.use(
         const token = sessionStorage.getItem('authToken');
         if (token) {
             config.headers['Authorization'] = `Bearer ${token}`;
-            console.log(token.usuario); // Solo para depuración, elimina en producción
+            console.log(token); // Solo para depuración, elimina en producción
+            console.log("HOLA");
         }
         return config;
     },

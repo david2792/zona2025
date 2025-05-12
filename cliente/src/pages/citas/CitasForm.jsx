@@ -57,9 +57,9 @@ const CitaForm = ({toast}) => {
       .catch((error) => console.error('Error al cargar profesionales:', error));
 
     // Cargar usuarios
-        const usu = localStorage.getItem("nombreUsuario")
+        const usu = sessionStorage.getItem("idusuario")+"-"+sessionStorage.getItem("nombreUsuario")
         setUsuarios(usu);
-        console.log(usu)
+       // console(sessionStorage.getItem('idusuario'))
     // Cargar estados de consulta
     axiosInstance
       .get('estado')
@@ -102,7 +102,7 @@ const CitaForm = ({toast}) => {
     };
     const horaFormateada = format(cita.hora, 'HH:mm');  
     const fechacita = fechaHora ? format(fechaHora, 'yyyy-MM-dd') : null;
-citaData.idusuario=localStorage.getItem('idusuario')
+citaData.idusuario=sessionStorage.getItem('idusuario')
 citaData.fecha=fechacita
 citaData.hora=horaFormateada
 console.log(citaData)
@@ -222,7 +222,6 @@ console.log(citaData)
               id="idusuario"
               value={usuarios}
               disabled
-              onChange={(e) => handleChange(e, localStorage.getItem('idusuario'))}
               className="w-full"
             />
           </div>
